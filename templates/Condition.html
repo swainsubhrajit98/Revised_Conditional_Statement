@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statement</title>
+</head>
+<body>
+    <center>
+        <!--  
+        <h1>If Condition</h1>
+        {% if a > 10 %}
+            <h1>Inside If Block</h1>
+            <h1>A={{a}}</h1>
+        {% endif %}
+        
+        <h1>If-Else Condition</h1>
+        {% if a > b %}
+            <h1>Inside If Block</h1>
+            <h1>A={{a}}</h1>
+        {% else %}
+            <h1>Inside Else Block</h1>
+            <h1>B={{b}}</h1>
+        {% endif %}
+        
+        <h1>If-Elif Condition</h1>
+        {% if a > b %}
+            <h1>Inside If Block</h1>
+            <h1>A is greater than B</h1>
+            <h1>{{a}}</h1>
+        {% elif b > a %}
+            <h1>Inside Elif Block</h1>
+            <h1>B is greater than A</h1>
+            <h1>{{b}}</h1>
+        {% else %}
+            <h1>Inside Else Block</h1>
+            <h1>Both A & B are Equal</h1>
+        {% endif %}
+        -->
+        <h1>Nested If Condition</h1>
+        {% if a > b %}
+            {% if a > c %}
+                <h1>{{a}} is greater than {{c}}</h1>
+            {% else %}
+                <h1>{{c}} is greater than {{a}} </h1>
+            {% endif %}
+        {% else %}
+            {% if b > c %}
+                <h1>{{b}} is greater then {{c}}</h1>
+            {% else %}
+                <h1>{{c}} is grater than {{b}}</h1>
+            {% endif %}
+        {% endif %}
+    </center>
+</body>
+</html>
